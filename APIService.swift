@@ -9,7 +9,7 @@ actor APIService {
     // "https://hushling-production.up.railway.app"
     // For local testing against the Windows backend:
     // "http://192.168.0.13:8000"
-    private let baseURL = "https://YOUR-APP.up.railway.app"
+    private let baseURL = "https://web-production-7ecb1.up.railway.app"
 
     func generateStory(characters: String, moral: String, duration: String) async throws -> String {
         guard let url = URL(string: "\(baseURL)/generate-story") else {

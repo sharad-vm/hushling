@@ -52,7 +52,7 @@ enum APIError: LocalizedError {
     var errorDescription: String? {
         switch self {
         case .serverUnreachable:
-            return "Cannot reach the story server. Make sure it is running on port 8000."
+            return "Cannot reach the story server. Check your internet connection and try again."
         case .serverError(let msg):
             return "Server error: \(msg)"
         case .decodingError:
